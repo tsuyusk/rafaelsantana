@@ -78,11 +78,11 @@ export default function Home() {
 
               <ul className="list-disc pl-8 mt-2">
                 <li>
-                  Em Backend, também tenho alta capacidade nos conceitos fundamentais, como HTTP etc. Mas me destaco na minha alta capacidade de desenvolver sistemas complexos, sejam eles com arquitetura monolito ou microsserviços, com banco de dados relacionais ou não relacionais, usando graphql, rest apis ou tRPC. Entendo todos esses tópicos com alto grau de proeficiência. 
+                  Em Backend, também tenho alta capacidade nos conceitos fundamentais, como HTTP etc. Mas me destaco na minha alta capacidade de desenvolver sistemas complexos, sejam eles com arquitetura monolito ou microsserviços, com banco de dados relacionais ou não relacionais, usando graphql, rest apis ou tRPC. Entendo todos esses tópicos com alto grau de proeficiência.
                 </li>
 
                 <li className="mt-4">
-                  Já no Frontend, entendo com alto nível de profundidade os conceitos associados ao React e seus frameworks, e sou mestre em HTMl, CSS e Javascript
+                  Já no Frontend, entendo com alto nível de profundidade os conceitos associados ao React e seus frameworks, e sou mestre em HTML, CSS e Javascript.
                 </li>
               </ul>
 
