@@ -3,12 +3,14 @@ import { FaFile } from 'react-icons/fa'
 
 import { Img } from "@/components/atoms/Img";
 import { Button } from "@/components/atoms/Button";
+import { ScrollUpArrow } from "@/components/atoms/ScrollUpArrow";
+import { RafaelSantanaPhoto } from '@/components/atoms/Rafaelsantanaphoto';
 
 import { Header } from "@/components/organisms/Header";
 import { Footer } from "@/components/organisms/Footer";
 import { Project } from "@/components/organisms/Project";
+
 import { data } from '@/consts/data';
-import { RafaelSantanaPhoto } from '@/components/atoms/Rafaelsantanaphoto';
 
 export default function Home() {
   return (
@@ -16,7 +18,7 @@ export default function Home() {
       <div className="w-full h-full flex flex-col">
         <Header />
 
-        <section className="flex items-center">
+        <section className="flex items-center" id="inicio">
           <div className="content flex flex-col-reverse lg:flex-row justify-center lg:justify-between items-center min-h-[720px]">
             <div>
               <h3 className="text-gray-400">Tudo que você precisa saber, de maneira rápida e objetiva.</h3>
@@ -31,7 +33,7 @@ export default function Home() {
           </div>
         </section>
         
-        <section className="bg-slate-900 py-16">
+        <section className="bg-slate-900 py-16" id="projetos">
           <header className="w-full flex justify-center">
             <h1 className="text-[24px] md:text-[30px] lg:text-[40px] font-bold text-slate-50 max-w-lg text-center">
               Aqui você encontra meus <span className="text-theme-400">projetos</span>.
@@ -46,7 +48,7 @@ export default function Home() {
           </main>
         </section>
 
-        <section>
+        <section id="sobremim">
           <header className="w-full flex justify-center bg-slate-900 py-16">
             <h1 className="text-[24px] md:text-[30px] lg:text-[40px] font-bold text-slate-50 max-w-3xl text-center">
               Conheça mais <span className="text-theme-400">sobre mim</span> e <span className="text-theme-400">minha trajetória na programação.</span>
@@ -112,7 +114,7 @@ export default function Home() {
           </main>
         </section>
 
-        <section>
+        <section id="depoimentos">
           <header className="w-full flex justify-center bg-slate-900 py-16">
             <h1 className="text-[24px] md:text-[30px] lg:text-[40px] font-bold text-slate-50 max-w-3xl text-center">
               Escute o que <span className="text-theme-400">outras pessoas</span> que <span className="text-theme-400">trabalharam comigo</span> têm a dizer.
@@ -144,7 +146,7 @@ export default function Home() {
           </main>
         </section>
 
-        <section className="bg-theme-400 flex ">
+        <section className="bg-theme-400 flex" id="curriculo">
           <div className="flex flex-col justify-center items-center h-[640px] w-full content">
             <h1 className="text-slate-50 text-[24px] md:text-[30px] lg:text-[40px] mb-12">Gostou do que viu?</h1>
 
@@ -153,6 +155,7 @@ export default function Home() {
         </section>
 
         <Footer />
+        <ScrollUpArrow />
       </div>
     </>
   )
