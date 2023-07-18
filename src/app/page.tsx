@@ -13,6 +13,7 @@ import { Footer } from "@/components/organisms/Footer";
 
 import { data } from '@/consts/data';
 import { OpenCVButton } from '@/components/organisms/OpenCvButton';
+import { FaLinkedin } from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
                   </span>,
                 </h1>
               </div>
-              <h1 className="text-[28px] md:text-[32px] lg:text-[40px] font-bold md:max-w-2xl w-fit">Fullstack Developer <span className="text-theme-400">focado</span> em Backend.</h1>
+              <h1 className="mb-4 text-[28px] md:text-[32px] lg:text-[40px] font-bold md:max-w-2xl w-fit">Fullstack Developer <span className="text-theme-400">focado</span> em Backend.</h1>
 
               <SocialMediaButtons />
             </div>
@@ -143,7 +144,11 @@ export default function Home() {
                       className="rounded-full"
                     />
     
-                    <span className="my-2 opacity-80">Co-Worker da <span style={{ color: coworker.color }}>{coworker.company}</span></span>
+                    <a href={coworker.linkedin} target='_blank' className="hover:text-gray-700 duration-100 transition-all my-2">
+                      <FaLinkedin size="18px"/>
+                    </a>
+
+                    <span className="mb-2 opacity-80">Co-Worker da <span style={{ color: coworker.color }}>{coworker.company}</span></span>
     
                     <h1 className="mb-2">{coworker.name}</h1>
     

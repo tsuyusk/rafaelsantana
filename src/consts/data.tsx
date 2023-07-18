@@ -133,7 +133,8 @@ export const data = {
       image: '/assets/rafael-santana-foto1.png',
       testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. ',
       color: '#9E5BF6',
-      company: 'Swanted'
+      company: 'Swanted',
+      linkedin: 'https://www.linkedin.com/in/rafael-sant-ana-5567311ab/',
     },
 
     {
@@ -141,7 +142,8 @@ export const data = {
       image: '/assets/rafael-santana-foto1.png',
       testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. ',
       color: '#D53F8C',
-      company: 'AgendaFy'
+      company: 'AgendaFy',
+      linkedin: 'https://www.linkedin.com/in/rafael-sant-ana-5567311ab/',
     },
     
     {
@@ -149,7 +151,8 @@ export const data = {
       image: '/assets/rafael-santana-foto1.png',
       testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. ',
       color: '#FF7700',
-      company: 'NeedU'
+      company: 'NeedU',
+      linkedin: 'https://www.linkedin.com/in/rafael-sant-ana-5567311ab/',
     },
 
     {
@@ -157,7 +160,8 @@ export const data = {
       image: '/assets/rafael-santana-foto1.png',
       testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. ',
       color: '#9E5BF6',
-      company: 'Swanted'
+      company: 'Swanted',
+      linkedin: 'https://www.linkedin.com/in/rafael-sant-ana-5567311ab/',
     },
   ],
 }
