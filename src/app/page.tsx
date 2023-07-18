@@ -25,8 +25,13 @@ export default function Home() {
             <div>
               <h3 className="text-gray-400">Tudo que você precisa saber, de maneira rápida e objetiva.</h3>
               <div className="relative w-fit">
-                <h1 className="text-[28px] md:text-[32px] lg:text-[40px] font-bold md:max-w-2xl w-fit">Olá, Eu sou <span className="whitespace-nowrap">Rafael Sant’Ana</span>,</h1>
-                <Img className="absolute -bottom-5 -right-6 md:-right-3 lg:right-8 pointer-events-none select-none" src="/assets/risco-destaque.png" alt="Risco para destacar Rafael Sant'Ana" width={324} height={41} />
+                <h1 className="text-[28px] md:text-[32px] lg:text-[40px] font-bold md:max-w-2xl w-fit">
+                  Olá, Eu sou {' '}
+                  <span className="relative w-fit">
+                    <span className="whitespace-nowrap">Rafael Sant{'’'}Ana</span>
+                    <Img className="absolute -bottom-5 -right-0 md:-right-3 lg:right-8 pointer-events-none select-none" src="/assets/risco-destaque.png" alt="Risco para destacar Rafael Sant'Ana" width={324} height={41} />
+                  </span>,
+                </h1>
               </div>
               <h1 className="text-[28px] md:text-[32px] lg:text-[40px] font-bold md:max-w-2xl w-fit">Fullstack Developer <span className="text-theme-400">focado</span> em Backend.</h1>
 
