@@ -103,7 +103,7 @@ export default function Home() {
             </aside>
 
             <main className="mt-8 lg:mt-0 lg:ml-40 w-full">
-              <h1 className="text-xl mb-2">Um pouco mais sobre minha história com a <span className="text-complementaryTheme-400">Computação</span></h1>
+              <h1 className="text-xl mb-2">Um pouco mais sobre <span className="text-complementaryTheme-400">minha história com</span> a <span className="text-complementaryTheme-400">Computação</span></h1>
 
               <p>
                 Desde criança, sempre fui fascinado por computação e tecnologia. Meu interesse foi despertado pelo meu pai, dono de uma loja de reparo de computadores. Exploro a web desde 2008, descobri o poder da tecnologia em conectar pessoas e me encantei com suas possibilidades.
