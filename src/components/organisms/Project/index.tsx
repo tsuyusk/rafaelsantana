@@ -21,7 +21,7 @@ export const Project: React.FC<ProjectProps> = ({ className, project }) => {
         />
 
         <div className="flex flex-col ml-2">
-          <h1 className="text-xl">Principais <span className={`text-[${project.color}]`}>habilidades</span> <br /> usadas</h1>
+          <h1 className="text-xl">Principais <span className={`text-${project.color}`}>habilidades</span> <br /> usadas</h1>
 
           <ul className="font-normal mt-4">
             {project.skills.map(skill => (

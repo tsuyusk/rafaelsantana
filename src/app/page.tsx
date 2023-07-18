@@ -97,11 +97,11 @@ export default function Home() {
               </ul>
             </aside>
 
-            <main className="ml-40 w-full">
+            <main className="ml-40 w-full ">
               <h1 className="text-xl mb-2">Titulo da seção</h1>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. Integer nec mi aliquam, tristique nibh in, venenatis ex. Donec ut faucibus turpis, ut tristique metus.   Aenean ac velit in velit vestibulum tempor in id neque. Pellentesque sed convallis enim. Etiam malesuada congue nisl, vitae bibendum sapien maximus et. Aliquam vestibulum libero in consequat elementum. Proin hendrerit posuere ligula <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. Integer nec mi aliquam, tristique nibh in, venenatis ex. Donec ut faucibus turpis, ut tristique metus. Aenean ac velit in velit vestibulum tempor in id neque. Pellentesque sed convallis enim. Etiam malesuada congue nisl, vitae bibendum sapien maximus et. Aliquam vestibulum libero in consequat elementum. Proin hendrerit posuere ligula <br />
                 <br />
                 vitae bibendum sapien maximus et. Aliquam vestibulum libero in consequat elementum. Proin hendrerit posuere ligula <br />
                 <br />
@@ -118,8 +118,28 @@ export default function Home() {
             </h1>
           </header>
 
-          <main className="w-full bg-slate-50 h-[720px]">
-
+          <main className="w-full py-32 content">
+            <div className="flex justify-center max-w-[1120px] overflow-hidden">
+              {data.coworkers.map((coworker, index) => (
+                <div className={csn("flex justify-between flex-col items-center w-[302px]", index > 0 && 'ml-10')} key={coworker.name}>
+                  <Img
+                    src={coworker.image}
+                    alt={coworker.name}
+                    width={180}
+                    height={180}
+                    className="rounded-full"
+                  />
+  
+                  <span className="opacity-60">Co-Worker da <span className={`text-[${coworker.color}]`}>{coworker.company}</span></span>
+  
+                  <h1>{coworker.name}</h1>
+  
+                  <p className="max-w-[302px] w-full text-justify">
+                    {coworker.testimonial}
+                  </p>
+                </div>
+              ))}
+            </div>
           </main>
         </section>
 

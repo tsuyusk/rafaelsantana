@@ -83,6 +83,7 @@ export const data = {
       ]
     },
   ],
+  
   skills: [
     {
       name: 'Node JS',
@@ -119,6 +120,40 @@ export const data = {
     {
       name: 'Scrum',
       icon: '/assets/icons/scrum.png'
+    },
+  ],
+
+  coworkers: [
+    {
+      name: "Rafael Sant'Ana",
+      image: '/assets/rafael-santana-foto1.png',
+      testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. ',
+      color: '#9E5BF6',
+      company: 'Swanted'
+    },
+
+    {
+      name: "Rafael Sant'Ana",
+      image: '/assets/rafael-santana-foto1.png',
+      testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. ',
+      color: '#D53F8C',
+      company: 'AgendaFy'
+    },
+    
+    {
+      name: "Rafael Sant'Ana",
+      image: '/assets/rafael-santana-foto1.png',
+      testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. ',
+      color: '#FF7700',
+      company: 'NeedU'
+    },
+
+    {
+      name: "Rafael Sant'Ana",
+      image: '/assets/rafael-santana-foto1.png',
+      testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. ',
+      color: '#9E5BF6',
+      company: 'Swanted'
     },
   ],
 }

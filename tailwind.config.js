@@ -18,7 +18,7 @@ module.exports = {
         },
         complementaryTheme: {
           400: '#7700FF'
-        }
+        },
       }
     },
   },
