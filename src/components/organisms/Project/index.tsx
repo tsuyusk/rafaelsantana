@@ -11,7 +11,7 @@ export const Project: React.FC<ProjectProps> = ({ className, project }) => {
   return (
     <div className={csn("flex-shrink-0 flex flex-col items-center text-white", className)}>
       <h4 className="text-xl">Cliente Real</h4>
-      <h1 className={csn(`text-[${project.color}]`, "text-4xl")}>{project.title}</h1>
+      <h1 style={{ color: project.color }} className={csn("text-4xl")}>{project.title}</h1>
       <div className="flex flex-col md:flex-row mt-3">
         <Img 
           src="https://user-images.githubusercontent.com/42506001/221354918-01bf0e89-48be-4df7-85bb-cdf5d0136f2a.png"
@@ -21,7 +21,7 @@ export const Project: React.FC<ProjectProps> = ({ className, project }) => {
         />
 
         <div className="flex flex-col mt-2 md:mt-0 md:ml-2">
-          <h1 className="text-xl">Principais <span className={`text-${project.color}`}>habilidades</span> <br /> usadas</h1>
+          <h1 className="text-xl">Principais <span style={{ color: project.color }}>habilidades</span> <br /> usadas</h1>
 
           <ul className="font-normal mt-4">
             {project.skills.map(skill => (

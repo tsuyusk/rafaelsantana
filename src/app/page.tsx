@@ -1,8 +1,8 @@
+import { Fragment } from 'react'
+import * as Separator from '@radix-ui/react-separator';
 import csn from 'classnames'
-import { FaFile } from 'react-icons/fa'
 
 import { Img } from "@/components/atoms/Img";
-import { Button } from "@/components/atoms/Button";
 import { ScrollUpArrow } from "@/components/atoms/ScrollUpArrow";
 import { RafaelSantanaPhoto } from '@/components/atoms/Rafaelsantanaphoto';
 
@@ -133,23 +133,25 @@ export default function Home() {
           <main className="w-full py-16 content">
             <div className="flex flex-wrap md:flex-nowrap justify-center max-w-[1120px] overflow-hidden">
               {data.coworkers.map((coworker, index) => (
-                <div className={csn("flex justify-between flex-col items-center w-[302px]", index > 0 && 'mt-8 sm:ml-3 md:ml-6 lg:mt-0 lg:ml-10')} key={coworker.name}>
-                  <Img
-                    src={coworker.image}
-                    alt={coworker.name}
-                    width={180}
-                    height={180}
-                    className="rounded-full"
-                  />
-  
-                  <span className="opacity-60">Co-Worker da <span className={`text-[${coworker.color}]`}>{coworker.company}</span></span>
-  
-                  <h1>{coworker.name}</h1>
-  
-                  <p className="max-w-[302px] w-full text-justify">
-                    {coworker.testimonial}
-                  </p>
-                </div>
+                <Fragment key={coworker.name}>
+                  <div className={csn("flex justify-between flex-col items-center w-[302px]", index > 0 && 'mt-8 sm:ml-3 md:ml-6 lg:mt-0 lg:ml-10')}>
+                    <Img
+                      src={coworker.image}
+                      alt={coworker.name}
+                      width={180}
+                      height={180}
+                      className="rounded-full"
+                    />
+    
+                    <span className="my-2 opacity-80">Co-Worker da <span style={{ color: coworker.color }}>{coworker.company}</span></span>
+    
+                    <h1 className="mb-2">{coworker.name}</h1>
+    
+                    <p className="max-w-[302px] w-full text-justify">
+                      {coworker.testimonial}
+                    </p>
+                  </div>
+                </Fragment>
               ))}
             </div>
           </main>
