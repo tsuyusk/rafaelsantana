@@ -1,3 +1,4 @@
+import csn from 'classnames'
 import { FaFile } from 'react-icons/fa'
 
 import { Img } from "@/components/atoms/Img";
@@ -6,6 +7,7 @@ import { Button } from "@/components/atoms/Button";
 import { Header } from "@/components/organisms/Header";
 import { Footer } from "@/components/organisms/Footer";
 import { Project } from "@/components/organisms/Project";
+import { data } from '@/consts/data';
 
 export default function Home() {
   return (
@@ -29,14 +31,17 @@ export default function Home() {
         </section>
         
         <section className="bg-slate-900 py-16">
-          <header className="w-full flex justify-center min-h-[720px]">
+          <header className="w-full flex justify-center">
             <h1 className="text-[40px] font-bold text-slate-50 max-w-lg text-center">
               Aqui você encontra meus <span className="text-theme-400">projetos</span>.
             </h1>
           </header>
 
-          <main>
-            <Project />
+          <main className="flex flex-wrap items-center justify-between content mt-24">
+            {data.projects.map((project, index) => (
+              <Project key={project.title} project={project} className={csn(index === 2 && 'mt-6 mx-auto')} />
+            ))}
+            {/* <Project className="mt-6 mx-auto"/> */}
           </main>
         </section>
 
@@ -47,8 +52,62 @@ export default function Home() {
             </h1>
           </header>
 
-          <main className="w-full bg-slate-50 h-[720px]">
+          <main className="flex justify-between w-full content pt-20 h-[720px]">
+            <aside className="max-w-32 w-full">
+              <h1 className="text-xl">
+                Cientista da  <span className="text-complementaryTheme-400">Computação</span> na <span className="text-complementaryTheme-400">UFMG</span>, <br />
+                <span className="text-complementaryTheme-400">Desenvolvedor</span> Web, <br />
+                <span className="text-complementaryTheme-400">Fluente</span> em <span className="text-complementaryTheme-400">inglês</span> <br />
+                e <span className="text-complementaryTheme-400">Autodidata</span>. <br />
+              </h1>
 
+              <h1 className="text-xl mt-7">Skills e Tecnologias</h1>
+
+              <ul className="list-disc pl-8 mt-2">
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+
+                <li>
+                  Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio.
+                </li>
+
+                <li>
+                  Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu.
+                </li>
+
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+                </li>
+              </ul>
+
+              <ul className="grid grid-cols-3 grid-rows-3 mt-14">
+                {data.skills.map((skill) => (
+                  <li className={csn("text-base flex mt-2 ")} key={skill.name}>
+                    <span className="font-medium mr-2">{skill.name}</span>
+
+                    <Img
+                      src={skill.icon}
+                      alt={skill.name}
+                      width={36}
+                      height={36}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </aside>
+
+            <main className="ml-40 w-full">
+              <h1 className="text-xl mb-2">Titulo da seção</h1>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. Integer nec mi aliquam, tristique nibh in, venenatis ex. Donec ut faucibus turpis, ut tristique metus.   Aenean ac velit in velit vestibulum tempor in id neque. Pellentesque sed convallis enim. Etiam malesuada congue nisl, vitae bibendum sapien maximus et. Aliquam vestibulum libero in consequat elementum. Proin hendrerit posuere ligula <br />
+                <br />
+                vitae bibendum sapien maximus et. Aliquam vestibulum libero in consequat elementum. Proin hendrerit posuere ligula <br />
+                <br />
+                vitae bibendum sapien maximus et. Aliquam vestibulum libero in consequat elementum. Proin hendrerit posuere ligula vitae bibendum sapien maximus et. Aliquam vestibulum libero<br />
+              </p>
+            </main>
           </main>
         </section>
 
