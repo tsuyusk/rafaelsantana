@@ -20,7 +20,7 @@ export const Project: React.FC<ProjectProps> = ({ className, project }) => {
           height={388}
         />
 
-        <div className="flex flex-col ml-2">
+        <div className="flex flex-col mt-2 md:mt-0 md:ml-2">
           <h1 className="text-xl">Principais <span className={`text-${project.color}`}>habilidades</span> <br /> usadas</h1>
 
           <ul className="font-normal mt-4">
