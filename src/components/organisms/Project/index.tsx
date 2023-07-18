@@ -10,15 +10,20 @@ interface ProjectProps {
 export const Project: React.FC<ProjectProps> = ({ className, project }) => {
   return (
     <div className={csn("flex-shrink-0 flex flex-col items-center text-white", className)}>
-      <h4 className="text-xl">Cliente Real</h4>
+      <h4 className="text-xl mb-4 opacity-95">{project.type}</h4>
       <h1 style={{ color: project.color }} className={csn("text-4xl")}>{project.title}</h1>
       <div className="flex flex-col md:flex-row mt-3">
-        <Img 
-          src="https://user-images.githubusercontent.com/42506001/221354918-01bf0e89-48be-4df7-85bb-cdf5d0136f2a.png"
-          alt="Swanted"
-          width={294}
-          height={388}
-        />
+        <div className="flex flex-col items-center">
+          <Img 
+            src={project.image}
+            alt="Swanted"
+            className="object-contain object-center"
+            width={324}
+            height={428}
+          />
+
+          <a className="mt-2 text-center text-blue-400 hover:text-blue-500 duration-200 transition-all" href={project.link} target='_blank'>Ver Mais sobre o Projeto</a>
+        </div>
 
         <div className="flex flex-col mt-2 md:mt-0 md:ml-2">
           <h1 className="text-xl">Principais <span style={{ color: project.color }}>habilidades</span> <br /> usadas</h1>

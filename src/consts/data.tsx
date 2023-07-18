@@ -5,8 +5,11 @@ export const data = {
 
   projects: [
     {
+      type: 'Cliente Real',
       title: 'Swanted',
+      image: '/assets/mockups/swanted.png',
       color: '#9E5BF6',
+      link: 'https://swanted.io',
       skills: [
         {
           name: 'Node JS',
@@ -35,8 +38,11 @@ export const data = {
       ]
     },
     {
+      type: 'CTO de Startup',
       title: 'AgendaFy',
+      image: '/assets/mockups/agendafy.png',
       color: '#D53F8C',
+      link: 'https://lp.agendafy.com.br',
       skills: [
         {
           name: 'Node JS',
@@ -61,8 +67,11 @@ export const data = {
       ]
     },
     {
+      type: 'Startup construída em equipe com prêmios da PUC CAMPINAS',
       title: 'NeedU',
+      image: '/assets/mockups/needu.png',
       color: '#FF7700',
+      link: 'https://www.puc-campinas.edu.br/startups-criadas-por-alunos-em-programa-de-aceleracao-serao-preparadas-para-atingir-mercado-em-larga-escala/',
       skills: [
         {
           name: 'Node JS',

@@ -46,13 +46,13 @@ export default function Home() {
         <section className="bg-slate-900 py-16" id="projetos">
           <header className="w-full flex justify-center">
             <h1 className="text-[24px] md:text-[30px] lg:text-[40px] font-bold text-slate-50 max-w-lg text-center">
-              Aqui você encontra meus <span className="text-theme-400">projetos</span>.
+              Aqui você encontra meus <span className="text-theme-400">projetos</span> de maior <span className="text-theme-400">destaque</span>.
             </h1>
           </header>
 
           <main className="flex flex-col flex-wrap items-center w-full content mt-24 lg:flex-row lg:justify-between">
             {data.projects.map((project, index) => (
-              <Project key={project.title} project={project} className={csn(index === 2 ? 'mt-6 mx-auto' : 'mt-6 mx-auto lg:mt-0 lg:mx-0')} />
+              <Project key={project.title} project={project} className={csn(index === 2 ? 'mt-20 mx-auto' : 'mt-20 mx-auto lg:mt-0 lg:mx-0')} />
             ))}
             {/* <Project className="mt-6 mx-auto"/> */}
           </main>
