@@ -78,25 +78,19 @@ export default function Home() {
 
               <ul className="list-disc pl-8 mt-2">
                 <li>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Em Backend, também tenho alta capacidade nos conceitos fundamentais, como HTTP etc. Mas me destaco na minha alta capacidade de desenvolver sistemas complexos, sejam eles com arquitetura monolito ou microsserviços, com banco de dados relacionais ou não relacionais, usando graphql, rest apis ou tRPC. Entendo todos esses tópicos com alto grau de proeficiência. 
                 </li>
 
-                <li>
-                  Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio.
-                </li>
+                <br />
 
                 <li>
-                  Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu.
-                </li>
-
-                <li>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+                  Já no Frontend, entendo com alto nível de profundidade os conceitos associados ao React e seus frameworks, e sou mestre em HTMl, CSS e Javascript
                 </li>
               </ul>
 
               <ul className="flex flex-wrap ml-2 md:grid md:grid-cols-3 md:grid-rows-3 mt-14">
                 {data.skills.map((skill) => (
-                  <li className={csn("text-base flex mt-2 ")} key={skill.name}>
+                  <li className={csn("text-base items-center flex mt-2 ")} key={skill.name}>
                     <span className="font-medium mr-2">{skill.name}</span>
 
                     <Img
@@ -111,14 +105,20 @@ export default function Home() {
             </aside>
 
             <main className="mt-8 lg:mt-0 lg:ml-40 w-full">
-              <h1 className="text-xl mb-2">Titulo da seção</h1>
+              <h1 className="text-xl mb-2">Um pouco mais sobre minha história com a <span className="text-complementaryTheme-400">Computação</span></h1>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. Integer nec mi aliquam, tristique nibh in, venenatis ex. Donec ut faucibus turpis, ut tristique metus. Aenean ac velit in velit vestibulum tempor in id neque. Pellentesque sed convallis enim. Etiam malesuada congue nisl, vitae bibendum sapien maximus et. Aliquam vestibulum libero in consequat elementum. Proin hendrerit posuere ligula <br />
-                <br />
-                vitae bibendum sapien maximus et. Aliquam vestibulum libero in consequat elementum. Proin hendrerit posuere ligula <br />
-                <br />
-                vitae bibendum sapien maximus et. Aliquam vestibulum libero in consequat elementum. Proin hendrerit posuere ligula vitae bibendum sapien maximus et. Aliquam vestibulum libero<br />
+                Desde criança, sempre fui fascinado por computação e tecnologia. Meu interesse foi despertado pelo meu pai, dono de uma loja de reparo de computadores. Exploro a web desde 2008, descobri o poder da tecnologia em conectar pessoas e me encantei com suas possibilidades.
+                <br /> <br />
+                Atualmente, sou estudante de Ciência da Computação na UFMG, a melhor universidade federal do Brasil. Busco complementar meus conhecimentos com cursos de liderança em TI e participei do Bootcamp GoStack, oferecido pela Rocketseat. Essas experiências têm sido fundamentais para o desenvolvimento das minhas habilidades na área.
+                <br /> <br />
+                Destaco dois projetos relevantes: o NeedU, premiado como TCC do ano na PUC, e o AppTopTop, um aplicativo lançado na Google Play Store para uma pizzaria. Essas realizações demonstram minha capacidade prática e minha motivação para explorar novos caminhos.
+                <br /> <br />
+                Atualmente, estou focado no desenvolvimento de websites e aplicativos usando a abordagem JamStack e o framework Next.js. Tenho interesse em explorar áreas como Bioinformática e Inteligência Artificial, buscando constantemente ampliar meus horizontes acadêmicos.
+                <br /> <br />
+                Além disso, ocupo o cargo de CTO na startup AgendaFy, onde tenho a oportunidade de participar como Lider ativamente da organização do projeto e orientar outros programadores.
+                <br /> <br />
+                No futuro, meu objetivo é me envolver em pesquisas científicas e ser um agente de mudança no setor de TI. Tenho ambições de criar novos frameworks e desenvolver inteligências artificiais disruptivas. Sou apaixonado pela computação e desejo contribuir para a inovação tecnológica no mercado de TI.
               </p>
             </main>
           </main>
