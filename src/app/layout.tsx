@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Rafael Sant\'Ana',
   description: 'Portfolio do desenvolvedor fullstack de software Rafael Sant\'Ana, consta com projetos, história da carreira, cargos, suas redes sociais e muito mais.',
-  themeColor: '#28CC25',
+  themeColor: '#020617',
   icons: '/assets/rafael-santana-foto1.png'
 }
 

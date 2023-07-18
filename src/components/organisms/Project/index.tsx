@@ -10,7 +10,7 @@ interface ProjectProps {
 export const Project: React.FC<ProjectProps> = ({ className, project }) => {
   return (
     <div className={csn("flex-shrink-0 flex flex-col items-center text-white", className)}>
-      <h2 className="text-xl mb-4 opacity-95">{project.type}</h2>
+      <h2 className="text-xl text-center mb-4 opacity-95">{project.type}</h2>
       <h1 style={{ color: project.color }} className={csn("text-4xl")}>{project.title}</h1>
       <div className="flex flex-col md:flex-row mt-3">
         <div className="flex flex-col items-center">
@@ -26,11 +26,11 @@ export const Project: React.FC<ProjectProps> = ({ className, project }) => {
         </div>
 
         <div className="flex flex-col mt-2 md:mt-0 md:ml-2">
-          <h1 className="text-xl">Principais <span style={{ color: project.color }}>habilidades</span> <br /> usadas</h1>
+          <h1 className="text-xl text-center md:text-start">Principais <span style={{ color: project.color }}>habilidades</span> <br /> usadas</h1>
 
-          <ul className="font-normal mt-4">
+          <ul className="flex flex-col items-center md:items-start font-normal mt-4">
             {project.skills.map(skill => (
-              <li className="flex mt-2" key={skill.name}>
+              <li className=" flex mt-2" key={skill.name}>
                 <span className="mr-2">{skill.name}</span>
 
                 <Img
