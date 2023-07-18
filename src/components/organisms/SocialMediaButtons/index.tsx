@@ -10,15 +10,15 @@ export const SocialMediaButtons: React.FC = () => {
 
   return (
     <>
-      <button onClick={() => handleOpenLink(data.linkedin)} className="hover:text-gray-700 duration-100 transition-all">
+      <button aria-label="Ir para Linkedin" onClick={() => handleOpenLink(data.linkedin)} className="hover:text-gray-700 duration-100 transition-all">
         <FaLinkedin size="56px"/>
       </button>
 
-      <button onClick={() => handleOpenLink(data.github)} className="ml-4 hover:text-gray-700 duration-100 transition-all">
+      <button aria-label="Ir para Github" onClick={() => handleOpenLink(data.github)} className="ml-4 hover:text-gray-700 duration-100 transition-all">
         <FaGithub size="56px"/>
       </button>
 
-      <button onClick={() => handleOpenLink(data.cv)} className="ml-4 hover:text-gray-700 duration-100 transition-all">
+      <button aria-label="Ver Curriculo" onClick={() => handleOpenLink(data.cv)} className="ml-4 hover:text-gray-700 duration-100 transition-all">
         <FaFile size="56px"/>
       </button>
     </>

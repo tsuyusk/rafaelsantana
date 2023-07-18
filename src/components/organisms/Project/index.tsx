@@ -10,7 +10,7 @@ interface ProjectProps {
 export const Project: React.FC<ProjectProps> = ({ className, project }) => {
   return (
     <div className={csn("flex-shrink-0 flex flex-col items-center text-white", className)}>
-      <h4 className="text-xl mb-4 opacity-95">{project.type}</h4>
+      <h2 className="text-xl mb-4 opacity-95">{project.type}</h2>
       <h1 style={{ color: project.color }} className={csn("text-4xl")}>{project.title}</h1>
       <div className="flex flex-col md:flex-row mt-3">
         <div className="flex flex-col items-center">

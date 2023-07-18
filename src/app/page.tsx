@@ -81,9 +81,7 @@ export default function Home() {
                   Em Backend, também tenho alta capacidade nos conceitos fundamentais, como HTTP etc. Mas me destaco na minha alta capacidade de desenvolver sistemas complexos, sejam eles com arquitetura monolito ou microsserviços, com banco de dados relacionais ou não relacionais, usando graphql, rest apis ou tRPC. Entendo todos esses tópicos com alto grau de proeficiência. 
                 </li>
 
-                <br />
-
-                <li>
+                <li className="mt-4">
                   Já no Frontend, entendo com alto nível de profundidade os conceitos associados ao React e seus frameworks, e sou mestre em HTMl, CSS e Javascript
                 </li>
               </ul>
