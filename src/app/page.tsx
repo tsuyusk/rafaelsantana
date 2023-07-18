@@ -7,10 +7,12 @@ import { ScrollUpArrow } from "@/components/atoms/ScrollUpArrow";
 import { RafaelSantanaPhoto } from '@/components/atoms/Rafaelsantanaphoto';
 
 import { Header } from "@/components/organisms/Header";
-import { Footer } from "@/components/organisms/Footer";
+import { SocialMediaButtons } from "@/components/organisms/SocialMediaButtons";
 import { Project } from "@/components/organisms/Project";
+import { Footer } from "@/components/organisms/Footer";
 
 import { data } from '@/consts/data';
+import { OpenCVButton } from '@/components/organisms/OpenCvButton';
 
 export default function Home() {
   return (
@@ -27,6 +29,8 @@ export default function Home() {
                 <Img className="absolute -bottom-5 -right-6 md:-right-3 lg:right-8 pointer-events-none select-none" src="/assets/risco-destaque.png" alt="Risco para destacar Rafael Sant'Ana" width={324} height={41} />
               </div>
               <h1 className="text-[28px] md:text-[32px] lg:text-[40px] font-bold md:max-w-2xl w-fit">Fullstack Developer <span className="text-theme-400">focado</span> em Backend.</h1>
+
+              <SocialMediaButtons />
             </div>
 
             <RafaelSantanaPhoto className="mb-4 lg:mb-0" />
@@ -150,7 +154,7 @@ export default function Home() {
           <div className="flex flex-col justify-center items-center h-[640px] w-full content">
             <h1 className="text-slate-50 text-[24px] md:text-[30px] lg:text-[40px] mb-12">Gostou do que viu?</h1>
 
-            <Button size="lg" iconRight={<FaFile />}>Baixe meu curriculo</Button>
+            <OpenCVButton />
           </div>
         </section>
 

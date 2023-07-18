@@ -1,4 +1,8 @@
 export const data = {
+  cv: '/CV.pdf',
+  github: 'https://github.com/tsuyusk',
+  linkedin: 'https://www.linkedin.com/in/rafael-sant-ana-5567311ab/',
+
   projects: [
     {
       title: 'Swanted',
