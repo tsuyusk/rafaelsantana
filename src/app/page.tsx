@@ -110,7 +110,7 @@ export default function Home() {
                 <br /> <br />
                 Atualmente, sou estudante de Ciência da Computação na UFMG, a melhor universidade federal do Brasil. Busco complementar meus conhecimentos com cursos de liderança em TI e participei do Bootcamp GoStack, oferecido pela Rocketseat. Essas experiências têm sido fundamentais para o desenvolvimento das minhas habilidades na área.
                 <br /> <br />
-                Destaco dois projetos relevantes: o NeedU, premiado como TCC do ano na PUC, e o AppTopTop, um aplicativo lançado na Google Play Store para uma pizzaria. Essas realizações demonstram minha capacidade prática e minha motivação para explorar novos caminhos.
+                Destaco dois projetos relevantes: o NeedU, premiado como TCC do ano na PUC, e a Swanted, um aplicativo para uma empresa irlandesa. Essas realizações demonstram minha capacidade prática e minha motivação para explorar novos caminhos.
                 <br /> <br />
                 Atualmente, estou focado no desenvolvimento de websites e aplicativos usando a abordagem JamStack e o framework Next.js. Tenho interesse em explorar áreas como Bioinformática e Inteligência Artificial, buscando constantemente ampliar meus horizontes acadêmicos.
                 <br /> <br />
