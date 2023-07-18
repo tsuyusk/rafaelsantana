@@ -138,38 +138,39 @@ export const data = {
 
   coworkers: [
     {
+      name: "Tiago Fugissawa",
+      image: '/assets/testimonials/tiago.jpeg',
+      testimonial: "Rafael Sant'Ana é um desenvolvedor que me incentivou muito no começo, mesmo sendo mais jovem do que eu. Seu conhecimento de código é incrível, e por isso ele atua como full stack. Quando trabalhamos juntos no NeedU, fiquei impressionado com sua facilidade nas linguagens de programação. Sempre dando dicas de boas práticas, ele fazia questão de atuar em features difíceis, como a de videochamada presente no NeedU, entre outras qualidades.",
+      color: '#FF7700',
+      company: 'Coworker da NeedU',
+      linkedin: 'https://www.linkedin.com/in/tiago-fugissawa-7b18161ba/',
+    },
+
+    {
       name: "Rafael Sant'Ana",
-      image: '/assets/rafael-santana-foto1.png',
+      image: '/assets/rafael-santana-foto2.png',
       testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. ',
       color: '#9E5BF6',
-      company: 'Swanted',
+      company: 'Coworker da Swanted',
       linkedin: 'https://www.linkedin.com/in/rafael-sant-ana-5567311ab/',
     },
 
     {
       name: "Rafael Sant'Ana",
-      image: '/assets/rafael-santana-foto1.png',
+      image: '/assets/rafael-santana-foto2.png',
       testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. ',
       color: '#D53F8C',
-      company: 'AgendaFy',
+      company: 'Coworker da AgendaFy',
       linkedin: 'https://www.linkedin.com/in/rafael-sant-ana-5567311ab/',
     },
     
-    {
-      name: "Rafael Sant'Ana",
-      image: '/assets/rafael-santana-foto1.png',
-      testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. ',
-      color: '#FF7700',
-      company: 'NeedU',
-      linkedin: 'https://www.linkedin.com/in/rafael-sant-ana-5567311ab/',
-    },
 
     {
       name: "Rafael Sant'Ana",
-      image: '/assets/rafael-santana-foto1.png',
+      image: '/assets/rafael-santana-foto2.png',
       testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. ',
       color: '#9E5BF6',
-      company: 'Swanted',
+      company: 'Coworker da Swanted',
       linkedin: 'https://www.linkedin.com/in/rafael-sant-ana-5567311ab/',
     },
   ],

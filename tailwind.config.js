@@ -14,10 +14,10 @@ module.exports = {
       },
       colors: {
         theme: {
-          400: '#28CC25'
+          400: '#3C91E6'
         },
         complementaryTheme: {
-          400: '#7700FF'
+          400: '#e63c91'
         },
       }
     },

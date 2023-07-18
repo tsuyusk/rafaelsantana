@@ -133,7 +133,7 @@ export default function Home() {
             <div className="flex flex-wrap md:flex-nowrap justify-center max-w-[1120px] overflow-hidden">
               {data.coworkers.map((coworker, index) => (
                 <Fragment key={coworker.name}>
-                  <div className={csn("flex justify-between flex-col items-center w-[302px]", index > 0 && 'mt-8 sm:ml-3 md:ml-6 lg:mt-0 lg:ml-10')}>
+                  <div className={csn("flex flex-col items-center w-[302px]", index > 0 && 'mt-8 sm:ml-3 md:ml-6 lg:mt-0 lg:ml-10')}>
                     <Img
                       src={coworker.image}
                       alt={coworker.name}
@@ -146,11 +146,11 @@ export default function Home() {
                       <FaLinkedin size="18px"/>
                     </a>
 
-                    <span className="mb-2 opacity-80">Co-Worker da <span style={{ color: coworker.color }}>{coworker.company}</span></span>
+                    <span className="mb-2 opacity-80"><span style={{ color: coworker.color }}>{coworker.company}</span></span>
     
                     <h1 className="mb-2">{coworker.name}</h1>
     
-                    <p className="max-w-[302px] w-full text-justify">
+                    <p className="max-w-[302px] w-full text-start">
                       {coworker.testimonial}
                     </p>
                   </div>
