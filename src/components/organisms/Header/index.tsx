@@ -1,5 +1,6 @@
 'use client'
 import React, { useCallback } from 'react'
+import csn from 'classnames'
 import { FaBars } from 'react-icons/fa'
 import { FiX } from 'react-icons/fi'
 
@@ -10,12 +11,12 @@ export const Header: React.FC = () => {
  
   return (
     <header id="header" className="w-full bg-slate-900">
-      <div className="text-gray-50 hover:text-gray-400 hidden content md:flex items-center h-20">
-        <SectionButton id="inicio">Início</SectionButton>
-        <SectionButton id="projetos">Projetos</SectionButton>
-        <SectionButton id="sobremim">Sobre Mim</SectionButton>
-        <SectionButton id="depoimentos">Depoimentos</SectionButton>
-        <SectionButton id="curriculo">Curriculo</SectionButton>
+      <div className="text-gray-50 hidden content md:flex items-center h-20">
+        <SectionButton className="hover:text-gray-400" id="inicio">Início</SectionButton>
+        <SectionButton className="hover:text-gray-400" id="projetos">Projetos</SectionButton>
+        <SectionButton className="hover:text-gray-400" id="sobremim">Sobre Mim</SectionButton>
+        <SectionButton className="hover:text-gray-400" id="depoimentos">Depoimentos</SectionButton>
+        <SectionButton className="hover:text-gray-400" id="curriculo">Curriculo</SectionButton>
       </div>
 
       <div className="flex ml-auto content md:hidden items-center h-20">
@@ -62,20 +63,20 @@ export const Header: React.FC = () => {
 
 interface SectionButtonProps {
   id: string
+  className?: string
   children: React.ReactNode
 }
 
-function SectionButton({ id, children }: SectionButtonProps) {
+function SectionButton({ id, children, className }: SectionButtonProps) {
   const handleGoToSection = useCallback((sectionId: string) => {
     const element = document.getElementById(sectionId)
 
-    console.log(element?.offsetTop)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
   }, [])
 
   return (
-    <button onClick={() => handleGoToSection(id)} className="duration-200 transition-all border-0 bg-transparent mt-2 md:mt-0 md:mr-4">{children}</button>    
+    <button onClick={() => handleGoToSection(id)} className={csn("duration-200 transition-all border-0 bg-transparent mt-2 md:mt-0 md:mr-4", className)}>{children}</button>    
   )
 }
