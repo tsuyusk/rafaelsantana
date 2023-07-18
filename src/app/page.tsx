@@ -8,6 +8,7 @@ import { Header } from "@/components/organisms/Header";
 import { Footer } from "@/components/organisms/Footer";
 import { Project } from "@/components/organisms/Project";
 import { data } from '@/consts/data';
+import { RafaelSantanaPhoto } from '@/components/atoms/Rafaelsantanaphoto';
 
 export default function Home() {
   return (
@@ -16,30 +17,30 @@ export default function Home() {
         <Header />
 
         <section className="flex items-center">
-          <div className="content flex justify-between items-center h-[720px]">
+          <div className="content flex flex-col-reverse lg:flex-row justify-center lg:justify-between items-center min-h-[720px]">
             <div>
               <h3 className="text-gray-400">Tudo que você precisa saber, de maneira rápida e objetiva.</h3>
               <div className="relative w-fit">
-                <h1 className="text-[40px] font-bold max-w-2xl w-fit">Olá, Eu sou Rafael Sant’Ana,</h1>
-                <Img className="absolute -bottom-5 right-8 pointer-events-none select-none" src="/assets/risco-destaque.png" alt="Risco para destacar Rafael Sant'Ana" width={324} height={41} />
+                <h1 className="text-[28px] md:text-[32px] lg:text-[40px] font-bold md:max-w-2xl w-fit">Olá, Eu sou <span className="whitespace-nowrap">Rafael Sant’Ana</span>,</h1>
+                <Img className="absolute -bottom-5 -right-6 md:-right-3 lg:right-8 pointer-events-none select-none" src="/assets/risco-destaque.png" alt="Risco para destacar Rafael Sant'Ana" width={324} height={41} />
               </div>
-              <h1 className="text-[40px] font-bold max-w-2xl w-fit">Fullstack Developer <span className="text-theme-400">focado</span> em Backend.</h1>
+              <h1 className="text-[28px] md:text-[32px] lg:text-[40px] font-bold md:max-w-2xl w-fit">Fullstack Developer <span className="text-theme-400">focado</span> em Backend.</h1>
             </div>
 
-            <Img src="/assets/rafael-santana-foto1.png" alt="Imagem profissional de Rafael Sant'Ana" width={420} height={420} />
+            <RafaelSantanaPhoto className="mb-4 lg:mb-0" />
           </div>
         </section>
         
         <section className="bg-slate-900 py-16">
           <header className="w-full flex justify-center">
-            <h1 className="text-[40px] font-bold text-slate-50 max-w-lg text-center">
+            <h1 className="text-[24px] md:text-[30px] lg:text-[40px] font-bold text-slate-50 max-w-lg text-center">
               Aqui você encontra meus <span className="text-theme-400">projetos</span>.
             </h1>
           </header>
 
-          <main className="flex flex-wrap items-center justify-between content mt-24">
+          <main className="flex flex-col flex-wrap items-center w-full content mt-24 lg:flex-row lg:justify-between">
             {data.projects.map((project, index) => (
-              <Project key={project.title} project={project} className={csn(index === 2 && 'mt-6 mx-auto')} />
+              <Project key={project.title} project={project} className={csn(index === 2 ? 'mt-6 mx-auto' : 'mt-6 mx-auto lg:mt-0 lg:mx-0')} />
             ))}
             {/* <Project className="mt-6 mx-auto"/> */}
           </main>
@@ -47,12 +48,12 @@ export default function Home() {
 
         <section>
           <header className="w-full flex justify-center bg-slate-900 py-16">
-            <h1 className="text-[40px] font-bold text-slate-50 max-w-3xl text-center">
+            <h1 className="text-[24px] md:text-[30px] lg:text-[40px] font-bold text-slate-50 max-w-3xl text-center">
               Conheça mais <span className="text-theme-400">sobre mim</span> e <span className="text-theme-400">minha trajetória na programação.</span>
             </h1>
           </header>
 
-          <main className="flex justify-between w-full content pt-20 h-[720px]">
+          <main className="flex flex-wrap lg:flex-nowrap lg:justify-between w-full content py-20 min-h-[720px]">
             <aside className="max-w-32 w-full">
               <h1 className="text-xl">
                 Cientista da  <span className="text-complementaryTheme-400">Computação</span> na <span className="text-complementaryTheme-400">UFMG</span>, <br />
@@ -81,7 +82,7 @@ export default function Home() {
                 </li>
               </ul>
 
-              <ul className="grid grid-cols-3 grid-rows-3 mt-14">
+              <ul className="flex flex-wrap ml-2 md:grid md:grid-cols-3 md:grid-rows-3 mt-14">
                 {data.skills.map((skill) => (
                   <li className={csn("text-base flex mt-2 ")} key={skill.name}>
                     <span className="font-medium mr-2">{skill.name}</span>
@@ -97,7 +98,7 @@ export default function Home() {
               </ul>
             </aside>
 
-            <main className="ml-40 w-full ">
+            <main className="mt-8 lg:mt-0 lg:ml-40 w-full">
               <h1 className="text-xl mb-2">Titulo da seção</h1>
 
               <p>
@@ -113,15 +114,15 @@ export default function Home() {
 
         <section>
           <header className="w-full flex justify-center bg-slate-900 py-16">
-            <h1 className="text-[40px] font-bold text-slate-50 max-w-3xl text-center">
+            <h1 className="text-[24px] md:text-[30px] lg:text-[40px] font-bold text-slate-50 max-w-3xl text-center">
               Escute o que <span className="text-theme-400">outras pessoas</span> que <span className="text-theme-400">trabalharam comigo</span> têm a dizer.
             </h1>
           </header>
 
-          <main className="w-full py-32 content">
-            <div className="flex justify-center max-w-[1120px] overflow-hidden">
+          <main className="w-full py-16 content">
+            <div className="flex flex-wrap md:flex-nowrap justify-center max-w-[1120px] overflow-hidden">
               {data.coworkers.map((coworker, index) => (
-                <div className={csn("flex justify-between flex-col items-center w-[302px]", index > 0 && 'ml-10')} key={coworker.name}>
+                <div className={csn("flex justify-between flex-col items-center w-[302px]", index > 0 && 'mt-8 sm:ml-3 md:ml-6 lg:mt-0 lg:ml-10')} key={coworker.name}>
                   <Img
                     src={coworker.image}
                     alt={coworker.name}
@@ -143,9 +144,9 @@ export default function Home() {
           </main>
         </section>
 
-        <section className="bg-theme-400 flex">
-          <div className="flex flex-col justify-center items-center h-[640px] w-full">
-            <h1 className="text-slate-50 text-[40px] mb-12">Gostou do que viu ?</h1>
+        <section className="bg-theme-400 flex ">
+          <div className="flex flex-col justify-center items-center h-[640px] w-full content">
+            <h1 className="text-slate-50 text-[24px] md:text-[30px] lg:text-[40px] mb-12">Gostou do que viu?</h1>
 
             <Button size="lg" iconRight={<FaFile />}>Baixe meu curriculo</Button>
           </div>
@@ -153,8 +154,7 @@ export default function Home() {
 
         <Footer />
       </div>
-
-      
     </>
   )
 }
+
