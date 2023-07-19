@@ -10,7 +10,7 @@ import * as Separator from '@radix-ui/react-separator';
 export const Header: React.FC = () => { 
  
   return (
-    <header id="header" className="w-full bg-slate-900">
+    <header id="header" className="w-full bg-slate-900 px-4">
       <div className="text-gray-50 hidden content md:flex items-center h-20">
         <SectionButton className="hover:text-gray-400" id="inicio">Início</SectionButton>
         <SectionButton className="hover:text-gray-400" id="projetos">Projetos</SectionButton>
@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
       <div className="flex ml-auto content md:hidden items-center h-20">
         <Dialog.Root>
           <Dialog.Trigger asChild>
-            <button className="text-gray-50 hover:text-gray-400 duration-200 transition-all border-0 bg-transparent">
+            <button aria-label="Abrir Menu lateral" className="text-gray-50 hover:text-gray-400 duration-200 transition-all border-0 bg-transparent">
               <FaBars size="32px" />
             </button>
           </Dialog.Trigger>

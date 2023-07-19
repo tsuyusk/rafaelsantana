@@ -8,7 +8,7 @@ export const data = {
       type: 'Cliente Real',
       title: 'Swanted',
       image: '/assets/mockups/swanted.png',
-      color: '#9E5BF6',
+      color: '#C18EFB',
       link: 'https://swanted.io',
       skills: [
         {
@@ -41,7 +41,7 @@ export const data = {
       type: 'CTO de Startup',
       title: 'AgendaFy',
       image: '/assets/mockups/agendafy.png',
-      color: '#D53F8C',
+      color: '#E684B7',
       link: 'https://lp.agendafy.com.br',
       skills: [
         {
@@ -150,7 +150,7 @@ export const data = {
       name: "Rafael Sant'Ana",
       image: '/assets/rafael-santana-foto2.png',
       testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. ',
-      color: '#9E5BF6',
+      color: '#C18EFB',
       company: 'Coworker da Swanted',
       linkedin: 'https://www.linkedin.com/in/rafael-sant-ana-5567311ab/',
     },
@@ -169,7 +169,7 @@ export const data = {
       name: "Rafael Sant'Ana",
       image: '/assets/rafael-santana-foto2.png',
       testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit nunc, venenatis vel malesuada ac, suscipit ut odio. Pellentesque ultrices, lectus non tempor gravida, nisl nibh pharetra leo, in tristique justo velit a arcu. Quisque non urna facilisis, imperdiet elit non, feugiat tortor. Nulla tincidunt arcu nec dolor aliquet, vitae semper nisi semper. ',
-      color: '#9E5BF6',
+      color: '#C18EFB',
       company: 'Coworker da Swanted',
       linkedin: 'https://www.linkedin.com/in/rafael-sant-ana-5567311ab/',
     },

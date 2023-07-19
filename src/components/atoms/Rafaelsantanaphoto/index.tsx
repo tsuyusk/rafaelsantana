@@ -27,6 +27,7 @@ const RafaelSantanaPhoto: React.FC<RafaelSantanaPhotoInterface> = ({ className }
     <Img 
       src="/assets/rafael-santana-foto2.png"
       alt="Imagem profissional de Rafael Sant'Ana"
+      priority
       width={rafaelSantanaImageSize}
       height={rafaelSantanaImageSize}
       className={className}

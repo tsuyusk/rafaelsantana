@@ -18,13 +18,13 @@ import { FaLinkedin } from 'react-icons/fa';
 export default function Home() {
   return (
     <>
-      <div className="w-full h-full flex flex-col">
+      <div className="bg-white w-full h-full flex flex-col">
         <Header />
 
-        <section className="flex items-center" id="inicio">
+        <section className="flex items-center px-4" id="inicio">
           <div className="content flex flex-col-reverse lg:flex-row justify-center lg:justify-between items-center min-h-[720px]">
             <div>
-              <h3 className="text-gray-400">Tudo que você precisa saber, de maneira rápida e objetiva.</h3>
+              <h3 className="text-gray-700">Tudo que você precisa saber, de maneira rápida e objetiva.</h3>
               <div className="relative w-fit">
                 <h1 className="text-[28px] md:text-[32px] lg:text-[40px] font-bold md:max-w-2xl w-fit">
                   Olá, Eu sou {' '}
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
         </section>
         
-        <section className="bg-slate-900 py-16" id="projetos">
+        <section className="bg-slate-900 py-16 px-4" id="projetos">
           <header className="w-full flex justify-center">
             <h1 className="text-[24px] md:text-[30px] lg:text-[40px] font-bold text-slate-50 max-w-lg text-center">
               Aqui você encontra meus <span className="text-theme-400">projetos</span> de maior <span className="text-theme-400">destaque</span>.
@@ -52,14 +52,14 @@ export default function Home() {
 
           <main className="flex flex-col flex-wrap items-center w-full content mt-24 lg:flex-row lg:justify-between">
             {data.projects.map((project, index) => (
-              <Project key={project.title} project={project} className={csn(index === 2 ? 'mt-20 mx-auto' : 'mt-20 mx-auto lg:mt-0 lg:mx-0')} />
+              <Project key={project.title} project={project} className={csn(index === 2 ? 'mt-20 mx-auto' : 'mt-20 mx-auto')} />
             ))}
             {/* <Project className="mt-6 mx-auto"/> */}
           </main>
         </section>
 
         <section id="sobremim">
-          <header className="w-full flex justify-center bg-slate-900 py-16">
+          <header className="w-full flex justify-center bg-slate-900 py-16 px-4">
             <h1 className="text-[24px] md:text-[30px] lg:text-[40px] font-bold text-slate-50 max-w-3xl text-center">
               Conheça mais <span className="text-theme-400">sobre mim</span> e <span className="text-theme-400">minha trajetória na programação.</span>
             </h1>
@@ -88,7 +88,7 @@ export default function Home() {
 
               <ul className="flex flex-wrap ml-2 md:grid md:grid-cols-3 md:grid-rows-3 mt-14">
                 {data.skills.map((skill) => (
-                  <li className={csn("text-base items-center flex mt-2 ")} key={skill.name}>
+                  <li className={csn("text-base items-center flex mt-2 ml-2")} key={skill.name}>
                     <span className="font-medium mr-2">{skill.name}</span>
 
                     <Img
@@ -123,7 +123,7 @@ export default function Home() {
         </section>
 
         <section id="depoimentos">
-          <header className="w-full flex justify-center bg-slate-900 py-16">
+          <header className="w-full flex justify-center bg-slate-900 py-16 px-4">
             <h1 className="text-[24px] md:text-[30px] lg:text-[40px] font-bold text-slate-50 max-w-3xl text-center">
               Escute o que <span className="text-theme-400">outras pessoas</span> que <span className="text-theme-400">trabalharam comigo</span> têm a dizer.
             </h1>
@@ -142,11 +142,11 @@ export default function Home() {
                       className="rounded-full"
                     />
     
-                    <a href={coworker.linkedin} target='_blank' className="hover:text-gray-700 duration-100 transition-all my-2">
+                    <a aria-label="Ir para Linkedin" href={coworker.linkedin} target='_blank' className="hover:text-gray-700 duration-100 transition-all my-2">
                       <FaLinkedin size="18px"/>
                     </a>
 
-                    <span className="mb-2 opacity-80"><span style={{ color: coworker.color }}>{coworker.company}</span></span>
+                    <span className="mb-2 text-gray-600">{coworker.company}</span>
     
                     <h1 className="mb-2">{coworker.name}</h1>
     
@@ -160,9 +160,9 @@ export default function Home() {
           </main>
         </section>
 
-        <section className="bg-theme-400 flex" id="curriculo">
+        <section className="bg-theme-400 flex px-4" id="curriculo">
           <div className="flex flex-col justify-center items-center h-[640px] w-full content">
-            <h1 className="text-slate-50 text-[24px] md:text-[30px] lg:text-[40px] mb-12">Gostou do que viu?</h1>
+            <h1 className="text-slate-50 text-center text-[24px] md:text-[30px] lg:text-[40px] mb-12">Gostou do que viu?</h1>
 
             <OpenCVButton />
           </div>
