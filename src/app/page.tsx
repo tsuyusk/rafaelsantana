@@ -78,11 +78,11 @@ export default function Home() {
 
               <ul className="list-disc pl-8 mt-2">
                 <li>
-                  Em Backend, também tenho alta capacidade nos conceitos fundamentais, como HTTP etc. Mas me destaco na minha alta capacidade de desenvolver sistemas complexos, sejam eles com arquitetura monolito ou microsserviços, com banco de dados relacionais ou não relacionais, usando graphql, rest apis ou tRPC. Entendo todos esses tópicos com alto grau de proeficiência.
+                  Em Backend, possuo um amplo conhecimento dos conceitos fundamentais, como o funcionamento do protocolo HTTP, entre outros. Além disso, destaco-me por minha habilidade excepcional em desenvolver sistemas complexos, tanto em arquiteturas monolíticas quanto em microsserviços. Tenho experiência sólida com bancos de dados, tanto relacionais quanto não relacionais, e estou familiarizado com a implementação de graphql, rest APIs e tRPC. Acredito que minha sólida base teórica e minha habilidade comprovada em desenvolver sistemas robustos foram um grande diferencial para agregar valor a todos os projetos em que participei e também um grande diferencial para todos os projetos que participarei.
                 </li>
 
                 <li className="mt-4">
-                  Já no Frontend, entendo com alto nível de profundidade os conceitos associados ao React e seus frameworks, e sou mestre em HTML, CSS e Javascript.
+                  No Frontend, possuo um profundo entendimento dos conceitos relacionados ao React e seus frameworks, e tenho ampla experiência em HTML, CSS e Javascript. Ao longo da minha jornada profissional, desenvolvi habilidades excepcionais na utilização do React e de suas ferramentas complementares. Tenho facilidade em criar interfaces responsivas e interativas, além de implementar soluções criativas para desafios complexos. Meu domínio em HTML, CSS e Javascript é uma base sólida que me permite construir aplicações web envolventes e de alta qualidade. Sou capaz de escrever código limpo, modular e bem documentado, o que facilita a colaboração em equipe e a manutenção dos projetos.
                 </li>
               </ul>
 
