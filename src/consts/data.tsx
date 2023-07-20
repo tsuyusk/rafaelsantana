@@ -127,6 +127,18 @@ export const data = {
       icon: '/assets/icons/graphql.png'
     },
     {
+      name: 'TRPc',
+      icon: '/assets/icons/trpc.svg'
+    },
+    {
+      name: 'Websockets',
+      icon: '/assets/icons/websockets.png'
+    },
+    {
+      name: 'GIT',
+      icon: '/assets/icons/git.png'
+    },
+    {
       name: 'Ingles',
       icon: '/assets/icons/english.png'
     },

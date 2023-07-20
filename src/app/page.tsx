@@ -69,20 +69,19 @@ export default function Home() {
             <aside className="max-w-32 w-full">
               <h1 className="text-xl">
                 Cientista da  <span className="text-complementaryTheme-400">Computação</span> na <span className="text-complementaryTheme-400">UFMG</span>, <br />
-                <span className="text-complementaryTheme-400">Desenvolvedor</span> Web, <br />
+                <span className="text-complementaryTheme-400">Desenvolvedor</span> Web e<br />
                 <span className="text-complementaryTheme-400">Fluente</span> em <span className="text-complementaryTheme-400">inglês</span> <br />
-                e <span className="text-complementaryTheme-400">Autodidata</span>. <br />
               </h1>
 
               <h1 className="text-xl mt-7">Skills e Tecnologias</h1>
 
               <ul className="list-disc pl-8 mt-2">
                 <li>
-                  Em Backend, possuo um amplo conhecimento dos conceitos fundamentais, como o funcionamento do protocolo HTTP, entre outros. Além disso, destaco-me por minha habilidade excepcional em desenvolver sistemas complexos, tanto em arquiteturas monolíticas quanto em microsserviços. Tenho experiência sólida com bancos de dados, tanto relacionais quanto não relacionais, e estou familiarizado com a implementação de graphql, rest APIs e tRPC. Acredito que minha sólida base teórica e minha habilidade comprovada em desenvolver sistemas robustos foram um grande diferencial para agregar valor a todos os projetos em que participei e também um grande diferencial para todos os projetos que participarei.
+                  No <strong>Backend</strong>, possuo <strong>experiência</strong> com diversos tipos de tecnologias, como bancos de dados relacionais e não relacionais, Rest Apis, GraphQL, TRPc e muito mais.
                 </li>
 
                 <li className="mt-4">
-                  No Frontend, possuo um profundo entendimento dos conceitos relacionados ao React e seus frameworks, e tenho ampla experiência em HTML, CSS e Javascript. Ao longo da minha jornada profissional, desenvolvi habilidades excepcionais na utilização do React e de suas ferramentas complementares. Tenho facilidade em criar interfaces responsivas e interativas, além de implementar soluções criativas para desafios complexos. Meu domínio em HTML, CSS e Javascript é uma base sólida que me permite construir aplicações web envolventes e de alta qualidade. Sou capaz de escrever código limpo, modular e bem documentado, o que facilita a colaboração em equipe e a manutenção dos projetos.
+                  <strong>Frontend</strong> experiente em <strong>React e seus frameworks, como Next.js</strong>. Tenho habilidade em criar interfaces interativas e responsivas. Escrevo código limpo, modular e bem documentado, facilitando colaboração em equipe.
                 </li>
               </ul>
 
@@ -103,21 +102,29 @@ export default function Home() {
             </aside>
 
             <main className="mt-8 lg:mt-0 lg:ml-40 w-full">
-              <h1 className="text-xl mb-2">Um pouco mais sobre <span className="text-complementaryTheme-400">minha história com</span> a <span className="text-complementaryTheme-400">Computação</span></h1>
+              <h1 className="text-xl mb-4">Um pouco mais sobre <span className="text-complementaryTheme-400">minha história com</span> a <span className="text-complementaryTheme-400">Computação</span></h1>
 
-              <p>
-                Desde criança, sempre fui fascinado por computação e tecnologia. Meu interesse foi despertado pelo meu pai, dono de uma loja de reparo de computadores. Exploro a web desde 2008, descobri o poder da tecnologia em conectar pessoas e me encantei com suas possibilidades.
-                <br /> <br />
-                Atualmente, sou estudante de Ciência da Computação na UFMG, a melhor universidade federal do Brasil. Busco complementar meus conhecimentos com cursos de liderança em TI e participei do Bootcamp GoStack, oferecido pela Rocketseat. Essas experiências têm sido fundamentais para o desenvolvimento das minhas habilidades na área.
-                <br /> <br />
-                Destaco dois projetos relevantes: o NeedU, premiado como TCC do ano na PUC, e a Swanted, um aplicativo para uma empresa irlandesa. Essas realizações demonstram minha capacidade prática e minha motivação para explorar novos caminhos.
-                <br /> <br />
-                Atualmente, estou focado no desenvolvimento de websites e aplicativos usando a abordagem JamStack e o framework Next.js. Tenho interesse em explorar áreas como Bioinformática e Inteligência Artificial, buscando constantemente ampliar meus horizontes acadêmicos.
-                <br /> <br />
-                Além disso, ocupo o cargo de CTO na startup AgendaFy, onde tenho a oportunidade de participar como Lider ativamente da organização do projeto e orientar outros programadores.
-                <br /> <br />
-                No futuro, meu objetivo é me envolver em pesquisas científicas e ser um agente de mudança no setor de TI. Tenho ambições de criar novos frameworks e desenvolver inteligências artificiais disruptivas. Sou apaixonado pela computação e desejo contribuir para a inovação tecnológica no mercado de TI.
-              </p>
+              <ul className="list-disc pl-8">
+                <li>Fascínio pela computação e tecnologia <strong>desde a infância</strong>.</li>
+                <li><strong>Estudante de Ciência da Computação na UFMG</strong>, buscando uma visão mais ampla da área.</li>
+                <li>
+                  <strong>Projetos</strong> mais relevantes:
+                  <ul className="list-disc pl-8">
+                    <li>
+                      <strong>NeedU</strong>: Premiado como TCC do ano na PUC Campinas
+                    </li>
+                    <li>
+                      <strong>Swanted</strong>: Primeira experiência profissional com uma empresa internacional
+                    </li>
+                    <li>
+                    <strong>AgendaFy</strong>: Primeiro aplicativo próprio com clientes pagantes reais e recorrentes. 
+                    </li>
+                  </ul>
+                </li>
+                <li><strong>Foco atual</strong> em masterizar o desenvolvimento de websites e aplicativos com as melhores técnicas para <strong>aumentar as taxas de retenção de clientes</strong>.</li>
+                <li>Ocupando o cargo de CTO na startup <strong>AgendaFy</strong>, <strong>liderando a organização do projeto</strong> e orientando outros programadores.</li>
+                <li>Interesses em explorar áreas como Bioinformática e Inteligência Artificial, buscando expandir horizontes no meio acadêmico.</li>
+              </ul>
             </main>
           </main>
         </section>
