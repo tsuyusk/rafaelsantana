@@ -42,7 +42,7 @@ export const data = {
       title: 'AgendaFy',
       image: '/assets/mockups/agendafy.png',
       color: '#E684B7',
-      link: 'https://lp.agendafy.com.br',
+      link: 'https://agendafy.com.br',
       skills: [
         {
           name: 'Node JS',
